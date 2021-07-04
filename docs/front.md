@@ -5,12 +5,10 @@
 
 ## 介绍
 
-酷安Linux交流群的Arch源，专门放archlinuxcn上面没有的软件，其中很多来源于酷安（当然，现在并没有多少）。
+来自中国的神秘的超度发行版
 
-祝大家新年快乐！在除夕之夜，我们带来了大量更新，包括：
-
-- 开始测试onedrive新源（见使用方法）
-- 对aarch64的支持
-- aarch64下的fakeroot-tcp
+- 采用shell编写的指明灯安装框架
+- 使用panda桌面环境
+- 不一样的Linux软件体验
 
 [使用方法](docs/getting-started.md)   [已有软件](docs/packages.md)   [公告板](docs/notice.md)   [写在最后](docs/contact.md) [wiki](docs/README.md)
