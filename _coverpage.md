@@ -7,7 +7,7 @@
 * 很不错 对吧？
 
 
-[Gitee](https://gitee.com/alexander-huang/coolapk-linux.git)
+[下载](https://mirrors.tuna.tsinghua.edu.cn/osdn/redclinux/72824/)
 [Get Started](docs/front.md)
 
 ![](others/image/background.png)
