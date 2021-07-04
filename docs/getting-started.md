@@ -1,51 +1,65 @@
 ## 使用方法
-
-
-
-#### 使用Gitee或者Github
-
-先将源地址写入/etc/pacman.conf：国内用户推荐使用Gitee上的：
-
-```yaml
-[coolapk-linux]
-SigLevel = Optional TrustAll
-Server = https://alexander-huang.gitee.io/coolapk-linux/$repo/$arch
-Server = https://alexander-huang.gitee.io/coolapk-linux/$repo/any
-```
-当然，~~如果你能顺畅访问Github~~，你也可以用**Fastgit，一个面向GitHub的反向代理，直接连接GitHub**：
-
-```yaml
-[coolapk-linux]
-SigLevel = Optional TrustAll
-Server = https://raw.fastgit.org/CoolapkLinux/coolapk-linux/master/$repo/$arch
-Server = https://raw.fastgit.org/CoolapkLinux/coolapk-linux/master/$repo/any
-```
-
-为了关爱强迫症患者，我们把32位的包单独存放在coolapk-linux32，可以按需使用。
-
-然后执行：
-
-```shell
-sudo pacman -Syy
-```
-
-
-
-#### 使用测试中的软件源
-
-这个源的原理是用one manager提取onedrive的直链。由于onedrive网速不稳定，且需要打包脚本的大量适配，此源仍在测试中。之后我们会使用阿里云盘代替onedrive。
-
-<font color=#ff7c70 size=4 face="noto-sans">警告：使用过程中可能出现下载速度缓慢、断流、404等情况！</font>
-
-挂在heroku上的：https://repo.oganesson.top/
-
-```
-[coolapk-linux]
-SigLevel = Optional TrustAll
-Server = https://repo.oganesson.top/arch-repo/$arch
-Server = https://repo.oganesson.top/arch-repo/any
-```
-
-挂在华为云函数上的：https://057fb7ebc01644f6b90e26a76bbb9ad8.apig.cn-east-3.huaweicloudapis.com/
-
-emmm，后者多半会被放弃。所以不提供配置方法。
+2021 年 2 月 10 日 第一版
+作者:IXCM 鸣谢:#include 乘风组及 RCLinux 开发组的全体成员
+一、设置安装介质
+对于 U 盘设备
+使用 UltraISO（软碟通）写入毕方 Linux 安装光盘文件，您可以在搜索引擎上找到此
+软件的官方网站下载。
+第一步，双击下载好的毕方 Linux 安装光盘
+第二步，点击启动，再点击写入硬盘镜像，您需要授予软碟通管理员权限才能正确写
+入此文件
+此指南意在帮助用户快速的安装毕方 Linux，若您不了解具体的安装过程，请根据此指南进行
+安装，在安装之前，请您备份好数据。
+2 毕方 Linux 安装指南（第一版）
+随后进入以下界面，我们选择好需要写入的 U 盘设备（此设备容量必须大于安装光盘
+文件容量），单击格式化（请注意保存数据） 
+3 毕方 Linux 安装指南（第一版）
+等待格式化完成后，点击写入，此时程序可能会出现无响应的情况，请耐心等待进度
+条完成
+在写入完成后启动盘即制作完成。
+对于 DVD-ROM
+您需要准备一个大于 1GB 的光碟与刻录软件
+第一步，找到毕方 Linux 安装文件，单击鼠标右键
+注意：在 windows8/10 系统下刻录可能会误提示空间不足，这时您需要使用刻录软件（例
+如 Nero）来进行刻录，若您的光盘为 RW 光盘，也需要使用其它刻录软件来完成，这里给
+出 windows 自带刻录软件使用方法。 
+4 毕方 Linux 安装指南（第一版）
+随后选择刻录机，单击刻录
+二、设置 BIOS
+在处理好安装介质以后，我们需要调整 BIOS 来使设备从安装介质启动，在这里，我们
+以 AMI BIOS 为例
+1. 确认设备为关闭状态，同时按下按下开机键和 f11（其它机器参考附录 1） 
+5 毕方 Linux 安装指南（第一版）
+若操作正确，应该会出现上图，此时选择 U 盘设备（设备名称可在第一部分软碟通
+写入界面查看）
+对于光盘设备，当插入光盘时会 BIOS 自动从 DVD-ROM 启动
+三、安装
+1、分区
+进入安装界面后，您应该可以看到命令行界面，此时您需要输入 rclinuxinstall 命令
+来启动安装程序。
+此时您可以看到
+在此界面时，您需要键入 sda 来启动分区程序，输入完成后会出现选择磁盘类型的界
+面，在这里我们选择 DOS（此操作不适用于 UEFI，请注意）
+编者注：此教程提供最简单的分区方法，您也可以根据需要自行分区 
+6 毕方 Linux 安装指南（第一版）
+进入后选择 Bootable（回车选择），如图所示
+随后按→方向键将光标移动到【Write】并回车；这时，会出现确认操作的提升，输入
+y 即可。
+在完成上述操作后，将光标移动到【Quit】退出分区软件
+二、安装基本系统
+在退出分区软件后输入
+/dev/sda1（需要安装的磁盘）
+/dev/sda1（引导分区）
+/dev/sda1（安装分区）
+在输入完成后会提示 Are you ready？
+这时您输入 okay 并回车即可安装
+注意：/dev/sda1 是根据上文的分区来举例的，若您是自定义分区，请按照括号内的参考内容
+来填写参数，若您是按照上文的分区步骤分区的话，请直接填写下面的内容(三次/dev/sda1） 
+7 毕方 Linux 安装指南（第一版）
+在屏幕停止滚动（安装完成）后输入 reboot 重启时，迅速拔掉安装介质，在启动选项
+菜单界面选择第二项
+默认用户名和密码为 rc
+最后，开始享用毕方 Linux 吧！
+附录 1 各品牌 BIOS 启动热键（来源：百度图片）
+免责声明：在安装前请妥善保管磁盘数据，对在安装过程中造成磁盘数据丢失概不负责 
+8 毕方 Linux 安装指南（第一版）
