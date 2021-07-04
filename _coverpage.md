@@ -1,4 +1,4 @@
-![logo](others/image/logo.png)
+![logo](others/image/logo.jpg)
 
 # 毕方Linux
 
