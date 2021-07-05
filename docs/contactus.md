@@ -8,4 +8,5 @@
 3.
 <br>
 ##毕方Linux的闲杂人员
+<br>
 1.**秋风** 毕方Linux的前任招生负责人 [Ta的主页](https://renaissancelife.github.io/graphics/gqindex.html)
