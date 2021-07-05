@@ -10,4 +10,5 @@
 * [公告板](docs/notice.md) 
 * [剪贴板](docs/paste.md) 
 * [捐赠](docs/donate.md) 
-* [写在最后](docs/contact.md)
+* [联系我们](docs/contact.md)
+* [对外规定](docs/policy.md)
