@@ -1,6 +1,6 @@
-# BifangLinux.github.io
-## Welcome to GitHub Pages
-
+# 毕方Linux wiki
+## Welcome to 毕方Linux的 GitHub 实验室！！！
+### 我们还没开始写呢！ 下面全是示例文件
 You can use the [editor on GitHub](https://github.com/BifangLinux/BifangLinux.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
