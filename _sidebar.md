@@ -9,5 +9,5 @@
 * [已有软件](docs/packages.md) 
 * [公告板](docs/notice.md) 
 * [剪贴板](docs/paste.md) 
-* [捐赠](docs/wish.md) 
+* [捐赠](docs/donate.md) 
 * [写在最后](docs/contact.md)
