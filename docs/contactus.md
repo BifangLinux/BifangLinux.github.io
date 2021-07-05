@@ -3,7 +3,7 @@
 <br>
 1.**Cheneyxue** 毕方Linux的主要负责人 外事 
 <br>
-[Ta的github](https://github.com/mrxuerz)
+[主页](https://github.com/mrxuerz)
 <br>
 2.**WINLOG**    毕方Linux的主要负责人 打包 
 <br>
