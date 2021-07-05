@@ -3,7 +3,8 @@
 <br>
 **Cheneyxue** 毕方Linux的主要负责人 外事 
 <br>
-[主页](https://github.com/mrxuerz)
+[毕方Linux于Gitter的在线闲聊室](https://github.com/mrxuerz)
+
 <br>
 **WINLOG**    毕方Linux的主要负责人 打包 
 <br>
