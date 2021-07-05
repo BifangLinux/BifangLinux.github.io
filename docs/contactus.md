@@ -3,6 +3,7 @@
 <br>
 **Cheneyxue** 毕方Linux的主要负责人 外事 
 <br>
+[毕方Linux于Gitter的在线闲聊室](https://gitter.im/毕方linux/bifanglinux?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [毕方Linux于Gitter的在线闲聊室](https://github.com/mrxuerz)
 
 <br>
